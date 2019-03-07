@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background-image: url(../img/white-waves.png);
+    background-size:cover;
+}
+
+header{
+    height: auto;
+    padding:0px;
+    width:100vw;
+    position:absolute;
+    top:0;
+    background-color: #fff;
+    border-bottom:2px solid #cccccc;
+    margin:0 auto;
+}
+
+div.main-nav{
+    width: 960px;
+    margin:0 auto;
+}
+
+.myName{
+    color:white;
+    background-color: #4aaaa5;
+    float:left;
+    height:auto;
+    padding:2px 10px;
+    text-align:center;
+    font-size: 12px;
+}
+
+.menu{
+    float:right;
+    padding-top: 10px;
+}
+
+
+
+nav.menu ul li{
+    text-align: center;
+    display:block;
+    float:left;
+    padding:0px 10px;
+    margin:0px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav.menu ul li:not(:last-child):after{
+    content:'|';
+    margin-left: 20px;
+}
+
+nav.menu ul li a{
+    text-decoration: none;
+    color:#666666;
+}
+
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+main{
+    width:960px;
+    margin:120px auto;
+    padding: 30px;
+    background-color: #fff;
+
+}
+.title-section h1{
+    color:#4aaaa5;
+    margin:0;
+}
+
+hr{
+    border: 1px solid #cccccc;
+    margin: 20px 0px 30px 0px;
+}
+
+#bio-img{
+    height:200px;
+    width:200px;
+    float:left;
+    margin-right:20px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.5;
+    margin:0px;
+}
+
+footer{
+    width:100%;
+    height: 50px;
+    position:fixed;
+    bottom:0;
+    background-color: #666666;
+    border-top:6px solid #4aaaa5;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    line-height: 50px;
+    font-size: 10px;
+}
+
+
+/*Contact section*/ 
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.5;
+}
+
+input, textarea{
+    width:100%;
+    padding:5px;
+    border:1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+#submit{
+    font-size: 14px;
+    width:auto;
+    letter-spacing: .5 ;
+    font-weight: bold;
+    background-color: #4aaaa5;
+    margin: 10px 0;
+    border:none;
+    color:white;
+    padding:8px 25px;
+}
+
+/* Portfolio */
+
+.lista-portfolio{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+li.port-items {
+    background-color: #000;
+    width:300px;
+    height:200px;
+    display:block;
+    float:left;
+    margin: 15px 35px 25px 0px;
+    position:relative;
+    text-align: center;
+}
+
+.port-items span{
+    color:white;
+    font-size:16px;
+    position: absolute;
+    padding:15px 10px;
+    background-color: #4aaaa5;
+    width:300px;
+    left:0;
+    bottom:10px;
+
+}
