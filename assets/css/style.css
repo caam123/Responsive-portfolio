@@ -39,7 +39,7 @@ div.main-nav{
 .menu{
     float:right;
     padding-top: 10px;
-}
+}1
 
 
 nav.menu ul li{
@@ -169,9 +169,13 @@ li.port-items {
 
 }
 
+
+
+
+/* Media queries *//* Media queries *//* Media queries *//* Media queries */
 /* Media queries *//* Media queries *//* Media queries *//* Media queries */
 
-/* 640px*/
+/* 6 4 0  p x */
 
 @media screen and (max-width:640px){
 
@@ -201,8 +205,9 @@ li.port-items {
         padding::.25em;
     }
     .menu{
-        width:100%;
+        width:70%;
         display: block;
+        float:none;
         padding:.3em;
         height: auto;
         margin:0 auto;
@@ -212,26 +217,30 @@ li.port-items {
         width:100%;
         margin:0 auto;
         display:flex;
+        padding:6px;
     }
 
     nav.menu ul li{
         font-size: .7em;
         flex:1;
-        padding:.5em 0;
+        padding:.35em 0;
         margin:0;
         text-align: center;
-        display:block
+        display:block;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
+/* Elimina el anterior desktop*/
  nav.menu ul li:not(:last-child):after{
         content:'';
         margin:0;
     } 
-        nav.menu ul li + li:before{
-            content:"|";
-            margin-right:3em;
-            position:relative;
-        }
+
+/*Divider responsivo mobile */
+    li:nth-child(2){
+        border-left:1px solid lightgray;
+        border-right:1px solid lightgray
+    }
 
 
     hr{
