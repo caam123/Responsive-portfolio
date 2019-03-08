@@ -42,7 +42,6 @@ div.main-nav{
 }
 
 
-
 nav.menu ul li{
     text-align: center;
     display:block;
@@ -167,5 +166,146 @@ li.port-items {
     width:300px;
     left:0;
     bottom:10px;
+
+}
+
+/* Media queries *//* Media queries *//* Media queries *//* Media queries */
+
+/* 640px*/
+
+@media screen and (max-width:640px){
+
+    header{
+        width:100%;
+        padding:0;
+        margin:0;
+        height: auto;
+        overflow: hidden;
+    }
+
+    main{
+        width:100%;
+        padding:10px;
+        min-height: 100vh;
+    }
+
+    div.main-nav{
+        width:100%;
+        margin:0 auto;
+        padding:0;
+    }
+    .myName{
+        display:block;
+        width:100%;
+        font-size: .4em;
+        padding::.25em;
+    }
+    .menu{
+        width:100%;
+        display: block;
+        padding:.3em;
+        height: auto;
+        margin:0 auto;
+    }
+
+    nav.menu ul{
+        width:100%;
+        margin:0 auto;
+        display:flex;
+    }
+
+    nav.menu ul li{
+        font-size: .7em;
+        flex:1;
+        padding:.5em 0;
+        margin:0;
+        text-align: center;
+        display:block
+    }
+
+ nav.menu ul li:not(:last-child):after{
+        content:'';
+        margin:0;
+    } 
+        nav.menu ul li + li:before{
+            content:"|";
+            margin-right:3em;
+            position:relative;
+        }
+
+
+    hr{
+        margin:.8em 0px .5em 0;
+    }
+
+    .title-section{
+        display:block;
+        width: 100%;
+        font-size: 1em;
+        margin-top:1em;
+    }
+
+    #bio-img{
+        width:100%;
+        margin:.5em 0;
+    }
+
+/*PORTFOLIO*/
+
+    ul.lista-portfolio{
+        width:100%;
+
+    }
+
+    li.port-items{
+        display:block;
+        margin:.8em auto;
+        padding:0;
+        object-fit: contain;
+        width:100%;
+        background-color:rgba(255,255,255,0);
+    }
+
+    .port-items span{
+        /*por alguna razon si tiene display:block se descuadra*/
+        position:absolute;
+        width:300px;
+        bottom:0;
+        font-size: .7em;
+        margin: 0 auto;
+        padding:5px;
+        left:auto;
+        right:auto;
+    }
+
+    /*Footer*/
+
+    footer{
+        position:static;
+        height:auto;
+        padding:.5em;
+        font-size: .5em;
+        line-height: 1;
+        border-top:2px solid #4aaaa5;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(max-width:768px){
 
 }
